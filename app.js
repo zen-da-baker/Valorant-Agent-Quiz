@@ -9,3 +9,5 @@ test.innerHTML = "hello";
 for (let i = 0; i < agents.length; i++) { 
     console.log(agents[i]);
 }
+
+console.log(agents.length);
