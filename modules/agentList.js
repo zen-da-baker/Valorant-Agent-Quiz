@@ -1,5 +1,9 @@
-import agent from './agentClass.js';
+// Import agent class
+import Agent from './agentClass.js';
 
-const brimstone = new agent('Brimstone', './images/brimstone.jpg', 1, 1, 4, 4, 2, 4, 1, 3);
+// Agent objects constructed
+const brimstone = new Agent('Brimstone', './images/brimstone.jpg', 1, 1, 4, 4, 2, 4, 1, 3);
 
-export const agents = [brimstone];
+const phoenix = new Agent('Phoenix', './images/phoenix', 4, 4, 2, 1, 2, 3, 1, 4);
+
+export const agents = [brimstone, phoenix];
