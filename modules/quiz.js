@@ -14,6 +14,22 @@ class Question {
         this.text4 = text4;
         this.trait4 = trait4;
     }
+
+    choice1() {
+        playerChoices.push(this.trait1);
+    }
+
+    choice2() {
+        playerChoices.push(this.trait2);
+    }
+
+    choice3() {
+        playerChoices.push(this.trait3);
+    }
+
+    choice4() {
+        playerChoices.push(this.trait4);
+    }
 }
 
 const question1 = new Question(
@@ -31,26 +47,6 @@ const question1 = new Question(
     "orange",
     "serious"
 )
-
-const question = {
-    msg: "",
-    choice1: {
-        text: "",
-        trait: ""
-    },
-    choice2: {
-        text: "",
-        trait: ""
-    },
-    choice3: {
-        text: "",
-        trait: ""
-    },
-    choice4: {
-        text: "",
-        trait: ""
-    }
-}
 
 const questions = [question1];
 
