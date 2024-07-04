@@ -1,7 +1,7 @@
 // Imports needed for the app functionality
 import { test } from './modules/test.js';
 import { agents } from './modules/agentList.js';
-import { questions, playerChoices } from './modules/quiz.js';
+import { questions } from './modules/quiz.js';
 // import { pairs } from './modules/pairs.js';
 // import { serious, fun, charming, strict, techie, classic, independent, team } from './modules/pairs.js';
 
@@ -16,6 +16,11 @@ document.getElementById('objectTest').innerHTML = `
     <button onclick="questions[0].choice1">${questions[0].text1}</button>
     <button onclick="questions[0].choice2">${questions[0].text2}</button>
     <button onclick="questions[0].choice3">${questions[0].text3}</button>
+    <button onclick="questions[0].choice4">${questions[0].text4}</button>
+    <button onclick="questions[0].choice5">${questions[0].text5}</button>
+    <button onclick="questions[0].choice6">${questions[0].text6}</button>
+    <button onclick="questions[0].choice7">${questions[0].text7}</button>
+    <button onclick="questions[0].choice8">${questions[0].text8}</button>
     `;
 
 // Console test for if all agent objects are readable
@@ -63,11 +68,16 @@ for (let i = 0; i < agents.length; i++) {
 }
 
 let pairs = [serious, fun, charming, strict, techie, classic, independent, team];
-
-
-
 console.log(pairs[0][1]);
 
+
+let playerChoices = [];
+
+if (playerChoices[0] == 'fun' && playerChoices[1] == 'charming' && playerChoices[2] == 'team') {
+    console.log('pheonix');
+}
+
+
 function main() {
-    
+
 }
