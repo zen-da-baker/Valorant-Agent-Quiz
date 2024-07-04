@@ -39,5 +39,5 @@ for (let i = 0; i < agents.length; i++) {
 let pairs = [serious, fun, charming, strict, techie, classic, independent, team];
 
 
-export  { serious, fun, charming, strict, techie, classic, independent, team };
-//export { pairs };
+//export  { serious, fun, charming, strict, techie, classic, independent, team };
+export { pairs };
