@@ -1,6 +1,8 @@
 // Imports needed for the app functionality
-import test from './modules/test.js';
+import { test } from './modules/test.js';
 import { agents } from './modules/agentList.js';
+// import { pairs } from './modules/pairs.js';
+// import { serious, fun, charming, strict, techie, classic, independent, team } from './modules/pairs.js';
 
 let agentDisplay = document.getElementById('agent-display');
 
@@ -14,4 +16,7 @@ for (let i = 0; i < agents.length; i++) {
 }
 
 console.log(agents.length);
+
+
+console.log(serious[0]);
 
