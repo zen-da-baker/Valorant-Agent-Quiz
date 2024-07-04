@@ -55,3 +55,5 @@ const question = {
 const questions = [question1];
 
 let playerChoices = [];
+
+export { questions, playerChoices };
