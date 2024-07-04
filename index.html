@@ -9,7 +9,7 @@
          <link rel="stylesheet" href="styles/responsive.css"/>
 
         <!-- Allows modules to be access by HTML -->
-        <script type="module" src="./app.js" defer></script>
+        <script type="module" src="app.js" defer></script>
     </head>
 
     <body>
@@ -18,16 +18,36 @@
         </header>
 
         <main>
-            <h2>Main</h2>
+            <button id="begin" class="btn">Begin</button>
 
-            <button onclick="console.log('hello')">Hello btn</button>
+            <!-- Test button -->
+            <!-- <button onclick="console.log('hello')">Hello btn</button> -->
 
             <!-- Test for if modules successfully modify the page DOM -->
             <p id="test"></p>
 
+            <!-- Question display test -->
             <div id="objectTest"></div>
 
-            <div id="agent-display"></div>
+            <!-- Agent information display test -->
+            <!-- <div id="agent-display"></div> -->
+
+            <div>
+                <header class="header">
+                    <h2 id="question-text"></h2>
+                </header>
+                
+                <button id="choice1" class="btn"></button>   <br/>
+                <button id="choice2" onclick="questions[0].choice2()" class="btn">${questions[0].text2}</button>   <br/>
+                <button id="choice3" onclick="questions[0].choice3()" class="btn">${questions[0].text3}</button>   <br/>
+                <button id="choice4" onclick="questions[0].choice4()" class="btn">${questions[0].text4}</button>   <br/>
+                <button id="choice5" onclick="questions[0].choice5()" class="btn">${questions[0].text5}</button>   <br/>
+                <button id="choice6" onclick="questions[0].choice6()" class="btn">${questions[0].text6}</button>   <br/>
+                <button id="choice7" onclick="questions[0].choice7()" class="btn">${questions[0].text7}</button>   <br/>
+                <button id="choice8" onclick="questions[0].choice8()" class="btn">${questions[0].text8}</button>   <br/>
+            </div>
+
+            <div id="question-display"></div>
         </main>
 
         <footer class="footer">
