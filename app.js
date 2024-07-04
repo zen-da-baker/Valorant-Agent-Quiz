@@ -1,7 +1,7 @@
 // Imports needed for the app functionality
 import { test } from './modules/test.js';
 import { agents } from './modules/agentList.js';
-import { questions } from './modules/quiz.js';
+import { questions, playerChoices } from './modules/quiz.js';
 // import { pairs } from './modules/pairs.js';
 // import { serious, fun, charming, strict, techie, classic, independent, team } from './modules/pairs.js';
 
@@ -11,7 +11,13 @@ let agentDisplay = document.getElementById('agent-display');
 test.innerHTML = "hello";
 
 // Question text viewable on page
-document.getElementById('objectTest').innerHTML = questions[0].msg;
+document.getElementById('objectTest').innerHTML = `
+    ${questions[0].msg}
+    <button onclick="questions[0].choice1">${questions[0].text1}</button>
+    <button onclick="questions[0].choice2">${questions[0].text2}</button>
+    <button onclick="questions[0].choice3">${questions[0].text3}</button>
+    <button onclick="questions[0].choice4">${questions[0].text4}</button>
+    `;
 
 // Console test for if all agent objects are readable
 for (let i = 0; i < agents.length; i++) { 
