@@ -16,7 +16,6 @@ document.getElementById('objectTest').innerHTML = `
     <button onclick="questions[0].choice1">${questions[0].text1}</button>
     <button onclick="questions[0].choice2">${questions[0].text2}</button>
     <button onclick="questions[0].choice3">${questions[0].text3}</button>
-    <button onclick="questions[0].choice4">${questions[0].text4}</button>
     `;
 
 // Console test for if all agent objects are readable
