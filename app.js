@@ -2,6 +2,7 @@
 import { test } from './modules/test.js';
 import { agents } from './modules/agentList.js';
 import { Question, questions } from './modules/quiz.js';
+// import { questionSequence } from './modules/questionSequence.js';
 // import { pairs } from './modules/pairs.js';
 // import { serious, fun, charming, strict, techie, classic, independent, team } from './modules/pairs.js';
 
@@ -70,9 +71,11 @@ document.getElementById('objectTest').innerHTML = `
 */
 
 // Console test for if all agent objects are readable
+/*
 for (let i = 0; i < agents.length; i++) { 
     console.log(agents[i]);
 }
+*/
 
 console.log(agents.length);
 
@@ -118,10 +121,49 @@ let pairs = [serious, fun, charming, strict, techie, classic, independent, team]
 
 let playerChoices = [];
 
-if (playerChoices[0] == 'fun' && playerChoices[1] == 'charming' && playerChoices[2] == 'team') {
-    console.log('pheonix');
+function pushPlayerChoices(trait) {
+    playerChoices.push(trait);
 }
 
+function pushFun() {
+    playerChoices.push('fun');
+}
+
+function pushCharming() {
+    playerChoices.push('charming');
+}
+
+function pushSerious() {
+    playerChoices.push('serious');
+}
+
+function pushStrict() {
+    playerChoices.push('strict');
+}
+
+function pushTechie() {
+    playerChoices.push('techie');
+}
+
+function pushClassic() {
+    playerChoices.push('classic');
+}
+
+function pushIndependent() {
+    playerChoices.push('independent');
+}
+
+function pushTeam() {
+    playerChoices.push('team');
+}
+
+
+
+function selectAgent() {
+    if (playerChoices[0] == 'fun' && playerChoices[1] == 'charming' && playerChoices[2] == 'team') {
+        console.log('pheonix');
+    }
+}
 /*
 const question1 = `
             ${questions[0].msg} <br/>
@@ -167,160 +209,178 @@ function questionSequence() {
         questionText.innerHTML = questions[0].msg;
         
         choice1.innerHTML = questions[0].text1;
-        choice1.addEventListener("click", questions[0].choice1);
+        choice1.addEventListener("click", pushFun);
         choice1.addEventListener("click", main);
 
         choice2.innerHTML = questions[0].text2;
-        choice2.addEventListener("click", questions[0].choice2);
+        choice2.addEventListener("click", pushCharming);
         choice2.addEventListener("click", main);
 
         choice3.innerHTML = questions[0].text3;
-        choice3.addEventListener("click", questions[0].choice3);
+        choice3.addEventListener("click", pushSerious);
         choice3.addEventListener("click", main);
 
         choice4.innerHTML = questions[0].text4;
-        choice4.addEventListener("click", questions[0].choice4);
+        choice4.addEventListener("click", pushStrict);
         choice4.addEventListener("click", main);
 
         choice5.innerHTML = questions[0].text5;
-        choice5.addEventListener("click", questions[0].choice5);
+        choice5.addEventListener("click", pushTechie);
         choice5.addEventListener("click", main);
 
         choice6.innerHTML = questions[0].text6;
-        choice6.addEventListener("click", questions[0].choice6);
+        choice6.addEventListener("click", pushClassic);
         choice6.addEventListener("click", main);
 
         choice7.innerHTML = questions[0].text7;
-        choice7.addEventListener("click", questions[0].choice7);
+        choice7.addEventListener("click", pushIndependent);
         choice7.addEventListener("click", main);
 
         choice8.innerHTML = questions[0].text8;
-        choice8.addEventListener("click", questions[0].choice8);
+        choice8.addEventListener("click", pushTeam);
         choice8.addEventListener("click", main);
 
     } else if (questionPosition == 2) {
         questionText.innerHTML = questions[1].msg;
 
-        choice1.removeEventListener("click", questions[0].choice1);
+        choice1.removeEventListener("click", pushFun);
         choice1.removeEventListener("click", main);
 
-        choice2.removeEventListener("click", questions[0].choice2);
+        choice2.removeEventListener("click", pushCharming);
         choice2.removeEventListener("click", main);
 
-        choice3.removeEventListener("click", questions[0].choice3);
+        choice3.removeEventListener("click", pushSerious);
         choice3.removeEventListener("click", main);
 
-        choice4.removeEventListener("click", questions[0].choice4);
+        choice4.removeEventListener("click", pushStrict);
         choice4.removeEventListener("click", main);
 
-        choice5.removeEventListener("click", questions[0].choice5);
+        choice5.removeEventListener("click", pushTechie);
         choice5.removeEventListener("click", main);
 
-        choice6.removeEventListener("click", questions[0].choice6);
+        choice6.removeEventListener("click", pushClassic);
         choice6.removeEventListener("click", main);
 
-        choice7.removeEventListener("click", questions[0].choice7);
+        choice7.removeEventListener("click", pushIndependent);
         choice7.removeEventListener("click", main);
 
-        choice8.removeEventListener("click", questions[0].choice8);
+        choice8.removeEventListener("click", pushTeam);
         choice8.removeEventListener("click", main);
 
         choice1.innerHTML = questions[1].text1;
-        choice1.addEventListener("click", questions[1].choice1);
+        choice1.addEventListener("click", pushFun);
         choice1.addEventListener("click", main);
 
         choice2.innerHTML = questions[1].text2;
-        choice2.addEventListener("click", questions[1].choice2);
+        choice2.addEventListener("click", pushCharming);
         choice2.addEventListener("click", main);
 
         choice3.innerHTML = questions[1].text3;
-        choice3.addEventListener("click", questions[1].choice3);
+        choice3.addEventListener("click", pushSerious);
         choice3.addEventListener("click", main);
 
         choice4.innerHTML = questions[1].text4;
-        choice4.addEventListener("click", questions[1].choice4);
+        choice4.addEventListener("click", pushStrict);
         choice4.addEventListener("click", main);
 
         choice5.innerHTML = questions[1].text5;
-        choice5.addEventListener("click", questions[1].choice5);
+        choice5.addEventListener("click", pushTechie);
         choice5.addEventListener("click", main);
 
         choice6.innerHTML = questions[1].text6;
-        choice6.addEventListener("click", questions[1].choice6);
+        choice6.addEventListener("click", pushClassic);
         choice6.addEventListener("click", main);
 
         choice7.innerHTML = questions[1].text7;
-        choice7.addEventListener("click", questions[1].choice7);
+        choice7.addEventListener("click", pushIndependent);
         choice7.addEventListener("click", main);
 
         choice8.innerHTML = questions[1].text8;
-        choice8.addEventListener("click", questions[1].choice8);
+        choice8.addEventListener("click", pushTeam);
         choice8.addEventListener("click", main);
 
     } else if (questionPosition == 3) {
         questionText.innerHTML = questions[2].msg;
 
-        choice1.removeEventListener("click", questions[1].choice1);
+        choice1.removeEventListener("click", pushFun);
         choice1.removeEventListener("click", main);
 
-        choice2.removeEventListener("click", questions[1].choice2);
+        choice2.removeEventListener("click", pushCharming);
         choice2.removeEventListener("click", main);
 
-        choice3.removeEventListener("click", questions[1].choice3);
+        choice3.removeEventListener("click", pushSerious);
         choice3.removeEventListener("click", main);
 
-        choice4.removeEventListener("click", questions[1].choice4);
+        choice4.removeEventListener("click", pushStrict);
         choice4.removeEventListener("click", main);
 
-        choice5.removeEventListener("click", questions[1].choice5);
+        choice5.removeEventListener("click", pushTechie);
         choice5.removeEventListener("click", main);
 
-        choice6.removeEventListener("click", questions[1].choice6);
+        choice6.removeEventListener("click", pushClassic);
         choice6.removeEventListener("click", main);
 
-        choice7.removeEventListener("click", questions[1].choice7);
+        choice7.removeEventListener("click", pushIndependent);
         choice7.removeEventListener("click", main);
 
-        choice8.removeEventListener("click", questions[1].choice8);
+        choice8.removeEventListener("click", pushTeam);
         choice8.removeEventListener("click", main);
 
         choice1.innerHTML = questions[2].text1;
-        choice1.addEventListener("click", questions[2].choice1);
+        choice1.addEventListener("click", pushFun);
+        choice1.addEventListener("click", main);
 
         choice2.innerHTML = questions[2].text2;
-        choice2.addEventListener("click", questions[2].choice2);
+        choice2.addEventListener("click", pushCharming);
+        choice2.addEventListener("click", main);
 
         choice3.innerHTML = questions[2].text3;
-        choice3.addEventListener("click", questions[2].choice3);
+        choice3.addEventListener("click", pushSerious);
+        choice3.addEventListener("click", main);
 
         choice4.innerHTML = questions[2].text4;
-        choice4.addEventListener("click", questions[2].choice4);
+        choice4.addEventListener("click", pushStrict);
+        choice4.addEventListener("click", main);
 
         choice5.innerHTML = questions[2].text5;
-        choice5.addEventListener("click", questions[2].choice5);
+        choice5.addEventListener("click", pushTechie);
+        choice5.addEventListener("click", main);
 
         choice6.innerHTML = questions[2].text6;
-        choice6.addEventListener("click", questions[2].choice6);
+        choice6.addEventListener("click", pushClassic);
+        choice6.addEventListener("click", main);
 
         choice7.innerHTML = questions[2].text7;
-        choice7.addEventListener("click", questions[2].choice7);
+        choice7.addEventListener("click", pushIndependent);
+        choice7.addEventListener("click", main);
 
         choice8.innerHTML = questions[2].text8;
-        choice8.addEventListener("click", questions[2].choice8);
+        choice8.addEventListener("click", pushTeam);
+        choice8.addEventListener("click", main);
 
     } else {
-        console.log(playerChoices);
+        console.log("Squence can not run");
     }
 }
 
 card.style.display = 'none';
 
 function main() {
+    beginBtn.removeEventListener("click", main);
+
     beginBtn.style.display = 'none';
     card.style.display = 'block';
 
-    console.log(playerChoices.length);
+    console.log("Player choices length: " + playerChoices.length);
     questionSequence();
+    console.log("Player choices length after sequence fn: " + playerChoices.length);
+
+    console.log("Player choices: " + playerChoices);
+
+    if (questionPosition == 4) {
+        console.log(playerChoices);
+        selectAgent();
+    }
 
     questionPosition++;
 }
