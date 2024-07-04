@@ -117,30 +117,30 @@ const question2 = new Question(
 )
 
 const question3 = new Question(
-    "What is your favorite hobby?",
+    "What is a tool you can't live without?",
 
-    "",
+    "Lighter",
     'fun', 
 
-    "",
+    "Stunning clothes",
     'charming', 
 
-    "",
+    "Flashlight",
     'serious', 
 
-    "",
+    "Rule book",
     'strict', 
 
-    "",
+    "Calculator",
     'techie', 
 
-    "",
+    "Hammer",
     'classic', 
 
-    "",
+    "Notebook",
     'independent', 
 
-    "",
+    "Walkie talkie",
     'team'
 )
 
