@@ -27,11 +27,21 @@ html {
 .header {
     color: white;
     background-color: black;
+
+    padding: 1rem;
 }
 
 .footer {
     color: white;
     background-color: black;
+
+    padding: 1rem;
+}
+
+.card {
+    margin: 5rem;
+    padding: 1rem;
+    border: 0.25rem solid black;
 }
 
 /* 4. Components
@@ -48,4 +58,8 @@ html {
     box-shadow: 0.25rem 0.25rem black;
 
     background-color: white;
+}
+.btn:hover {
+    background-color: black;
+    color: white;
 }

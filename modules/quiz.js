@@ -30,7 +30,7 @@ class Question {
     }
 
     choice1() {
-        playerChoices.push(this.trait1);
+        playerChoices.push(`${this.trait1}`);
         console.log(this.trait1);
     }
 
