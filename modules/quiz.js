@@ -61,7 +61,7 @@ class Question {
 }
 
 const question1 = new Question(
-    "Question",
+    "What are you passionate about?",
 
     "1",
     'fun', 
@@ -89,7 +89,7 @@ const question1 = new Question(
 )
 
 const question2 = new Question(
-    "Question",
+    "What is your greatest strength?",
 
     "",
     'fun', 
@@ -117,7 +117,7 @@ const question2 = new Question(
 )
 
 const question3 = new Question(
-    "Question",
+    "What is your favorite hobby?",
 
     "",
     'fun', 
