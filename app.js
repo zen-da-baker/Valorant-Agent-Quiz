@@ -12,15 +12,35 @@ test.innerHTML = "hello";
 
 // Question text viewable on page
 document.getElementById('objectTest').innerHTML = `
-    ${questions[0].msg}
-    <button onclick="questions[0].choice1">${questions[0].text1}</button>
-    <button onclick="questions[0].choice2">${questions[0].text2}</button>
-    <button onclick="questions[0].choice3">${questions[0].text3}</button>
-    <button onclick="questions[0].choice4">${questions[0].text4}</button>
-    <button onclick="questions[0].choice5">${questions[0].text5}</button>
-    <button onclick="questions[0].choice6">${questions[0].text6}</button>
-    <button onclick="questions[0].choice7">${questions[0].text7}</button>
-    <button onclick="questions[0].choice8">${questions[0].text8}</button>
+    ${questions[0].msg} <br/>
+    <button onclick="questions[0].choice1" class="btn">${questions[0].text1}</button>   <br/>
+    <button onclick="questions[0].choice2" class="btn">${questions[0].text2}</button>   <br/>
+    <button onclick="questions[0].choice3" class="btn">${questions[0].text3}</button>   <br/>
+    <button onclick="questions[0].choice4" class="btn">${questions[0].text4}</button>   <br/>
+    <button onclick="questions[0].choice5" class="btn">${questions[0].text5}</button>   <br/>
+    <button onclick="questions[0].choice6" class="btn">${questions[0].text6}</button>   <br/>
+    <button onclick="questions[0].choice7" class="btn">${questions[0].text7}</button>   <br/>
+    <button onclick="questions[0].choice8" class="btn">${questions[0].text8}</button>   <br/>
+
+    ${questions[1].msg} <br/>
+    <button onclick="questions[0].choice1" class="btn">${questions[1].text1}</button>   <br/>
+    <button onclick="questions[0].choice2" class="btn">${questions[1].text2}</button>   <br/>
+    <button onclick="questions[0].choice3" class="btn">${questions[1].text3}</button>   <br/>
+    <button onclick="questions[0].choice4" class="btn">${questions[1].text4}</button>   <br/>
+    <button onclick="questions[0].choice5" class="btn">${questions[1].text5}</button>   <br/>
+    <button onclick="questions[0].choice6" class="btn">${questions[1].text6}</button>   <br/>
+    <button onclick="questions[0].choice7" class="btn">${questions[1].text7}</button>   <br/>
+    <button onclick="questions[0].choice8" class="btn">${questions[1].text8}</button>   <br/>
+
+    ${questions[2].msg} <br/>
+    <button onclick="questions[0].choice1" class="btn">${questions[2].text1}</button>   <br/>
+    <button onclick="questions[0].choice2" class="btn">${questions[2].text2}</button>   <br/>
+    <button onclick="questions[0].choice3" class="btn">${questions[2].text3}</button>   <br/>
+    <button onclick="questions[0].choice4" class="btn">${questions[2].text4}</button>   <br/>
+    <button onclick="questions[0].choice5" class="btn">${questions[2].text5}</button>   <br/>
+    <button onclick="questions[0].choice6" class="btn">${questions[2].text6}</button>   <br/>
+    <button onclick="questions[0].choice7" class="btn">${questions[2].text7}</button>   <br/>
+    <button onclick="questions[0].choice8" class="btn">${questions[2].text8}</button>   <br/>
     `;
 
 // Console test for if all agent objects are readable

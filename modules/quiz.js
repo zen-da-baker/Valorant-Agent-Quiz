@@ -61,58 +61,58 @@ class Question {
 }
 
 const question1 = new Question(
-    "What are you passionate about?",
+    "What do you like to do in your spare time?",
 
-    "1",
+    "Visit amusment parks",
     'fun', 
 
-    "2",
+    "Experiment with fashion",
     'charming', 
 
-    "3",
+    "Reading books",
     'serious', 
 
-    "4",
+    "Solving puzzles",
     'strict', 
 
-    "5",
+    "Programming apps",
     'techie', 
 
-    "6",
+    "Driving classic cars",
     'classic', 
 
-    "7",
+    "Shopping at the mall",
     'independent', 
 
-    "8",
+    "Volunteering for a non-profit",
     'team'
 )
 
 const question2 = new Question(
     "What is your greatest strength?",
 
-    "",
+    "Breaking the rules",
     'fun', 
 
-    "",
+    "Talking yourself out of any situation",
     'charming', 
 
-    "",
+    "Planning ahead",
     'serious', 
 
-    "",
+    "Following directions exactly",
     'strict', 
 
-    "",
+    "Using new technology to your advantage",
     'techie', 
 
-    "",
+    "Trusting established rules",
     'classic', 
 
-    "",
+    "Being an independent thinker",
     'independent', 
 
-    "",
+    "Working well in a team",
     'team'
 )
 

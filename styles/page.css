@@ -9,6 +9,11 @@ html {
     font-size: 16px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* 2. Typography
 ========================================================= */
 
@@ -19,5 +24,28 @@ html {
 /* 3. Structure
 ========================================================= */
 
+.header {
+    color: white;
+    background-color: black;
+}
+
+.footer {
+    color: white;
+    background-color: black;
+}
+
 /* 4. Components
 ========================================================= */
+
+.btn {
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+    border-radius: 0.5rem;
+
+    cursor: pointer;
+
+    box-shadow: 0.25rem 0.25rem black;
+
+    background-color: white;
+}
