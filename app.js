@@ -2,6 +2,7 @@
 import { test } from './modules/test.js';
 import { agents } from './modules/agentList.js';
 import { Question, questions } from './modules/quiz.js';
+import { randomAgent } from './modules/randomAgent.js';
 // import { questionSequence } from './modules/questionSequence.js';
 // import { pairs } from './modules/pairs.js';
 // import { serious, fun, charming, strict, techie, classic, independent, team } from './modules/pairs.js';
@@ -396,9 +397,18 @@ function results(agent) {
 }
 
 function selectAgent() {
-    if (playerChoices[0] == "fun" && playerChoices[1] == "fun" && playerChoices[2] == "fun") {
+    if (playerChoices.includes('classic' && 'classic' && 'classic')) {
+        console.log('Brimstone');
+    } 
+    
+    
+    
+    else if (playerChoices.includes('fun' )[0] == "fun" && playerChoices[1] == "fun" && playerChoices[2] == "fun") {
         console.log('Clove');
         return agents[23];
+    } else {
+        console.log(agents[(randomAgent())]);
+        return agents[randomAgent()];
     }
 }
 
