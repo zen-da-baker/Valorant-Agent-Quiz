@@ -24,6 +24,23 @@ const choice8 = document.getElementById('choice8');
 
 const card = document.getElementById('card');
 
+const displayResults = document.getElementById('display-results');
+
+const agentName = document.getElementById('agent-name');
+const agentDescription = document.getElementById('agent-description');
+
+const agentLike1 = document.getElementById('agent-like1');
+const agentLike2 = document.getElementById('agent-like2');
+const agentLike3 = document.getElementById('agent-like3');
+
+const agentDislike1 = document.getElementById('agent-dislike1');
+const agentDislike2 = document.getElementById('agent-dislike2');
+const agentDislike3 = document.getElementById('agent-dislike3');
+
+const agentPair1 = document.getElementById('agent-pair1');
+const agentPair2 = document.getElementById('agent-pair2');
+const agentPair3 = document.getElementById('agent-pair3');
+
 
 // agent display variable
 /*
@@ -96,21 +113,21 @@ let independent = [];
 let team = [];
 
 for (let i = 0; i < agents.length; i++) {
-    if (agents[i].likes == 'serious') {
+    if (agents[i].likes[0] == 'serious') {
         serious.push(agents[i].name);
-    } else if (agents[i].likes == 'fun') {
+    } else if (agents[i].likes[0] == 'fun') {
         fun.push(agents[i].name);
-    } else if (agents[i].likes == 'charming') {
+    } else if (agents[i].likes[0] == 'charming') {
         charming.push(agents[i].name);
-    } else if (agents[i].likes == 'strict') {
+    } else if (agents[i].likes[0] == 'strict') {
         strict.push(agents[i].name);
-    } else if (agents[i].likes == 'techie') {
+    } else if (agents[i].likes[0] == 'techie') {
         techie.push(agents[i].name);
-    } else if (agents[i].likes == 'classic') {
+    } else if (agents[i].likes[0] == 'classic') {
         classic.push(agents[i].name);
-    } else if (agents[i].likes == 'independent') {
+    } else if (agents[i].likes[0] == 'independent') {
         independent.push(agents[i].name);
-    } else if (agents[i].likes == 'team') {
+    } else if (agents[i].likes[0] == 'team') {
         team.push(agents[i].name);
     }
 }
@@ -158,12 +175,6 @@ function pushTeam() {
 }
 
 
-
-function selectAgent() {
-    if (playerChoices[0] == 'fun' && playerChoices[1] == 'charming' && playerChoices[2] == 'team') {
-        console.log('pheonix');
-    }
-}
 /*
 const question1 = `
             ${questions[0].msg} <br/>
@@ -363,7 +374,36 @@ function questionSequence() {
     }
 }
 
+function results(agent) {
+    console.log(agent.name);
+
+    card.style.display = 'none';
+    displayResults.style.display = 'block';
+
+    agentName.innerHTML = agent.name;
+    agentDescription.innerHTML = agent.description;
+
+    agentLike1.innerHTML = agent.likes[0];
+    agentLike2.innerHTML = agent.likes[1];
+    agentLike3.innerHTML = agent.likes[2];
+
+    agentDislike1.innerHTML = agent.dislikes[0];
+    agentDislike2.innerHTML = agent.dislikes[1];
+    agentDislike3.innerHTML = agent.dislikes[2];
+
+    agentPair1.innerHTML = agent.likes[0];
+    
+}
+
+function selectAgent() {
+    if (playerChoices[0] == "fun" && playerChoices[1] == "fun" && playerChoices[2] == "fun") {
+        console.log('Clove');
+        return agents[23];
+    }
+}
+
 card.style.display = 'none';
+displayResults.style.display = 'none';
 
 function main() {
     beginBtn.removeEventListener("click", main);
@@ -379,7 +419,7 @@ function main() {
 
     if (questionPosition == 4) {
         console.log(playerChoices);
-        selectAgent();
+        results(selectAgent());
     }
 
     questionPosition++;
