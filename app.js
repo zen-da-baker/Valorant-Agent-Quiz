@@ -3,6 +3,8 @@ import { test } from './modules/test.js';
 import { agents } from './modules/agentList.js';
 import { Question, questions } from './modules/quiz.js';
 import { randomAgent } from './modules/randomAgent.js';
+import { selectAgent } from './modules/selectAgent.js';
+import { playerChoices, pushFun, pushCharming, pushSerious, pushStrict, pushTechie, pushClassic, pushIndependent, pushTeam } from './modules/playerChoices.js';
 // import { questionSequence } from './modules/questionSequence.js';
 // import { pairs } from './modules/pairs.js';
 // import { serious, fun, charming, strict, techie, classic, independent, team } from './modules/pairs.js';
@@ -137,43 +139,7 @@ let pairs = [serious, fun, charming, strict, techie, classic, independent, team]
 // console.log(pairs[0][1]);
 
 
-let playerChoices = [];
 
-function pushPlayerChoices(trait) {
-    playerChoices.push(trait);
-}
-
-function pushFun() {
-    playerChoices.push('fun');
-}
-
-function pushCharming() {
-    playerChoices.push('charming');
-}
-
-function pushSerious() {
-    playerChoices.push('serious');
-}
-
-function pushStrict() {
-    playerChoices.push('strict');
-}
-
-function pushTechie() {
-    playerChoices.push('techie');
-}
-
-function pushClassic() {
-    playerChoices.push('classic');
-}
-
-function pushIndependent() {
-    playerChoices.push('independent');
-}
-
-function pushTeam() {
-    playerChoices.push('team');
-}
 
 
 /*
@@ -396,21 +362,7 @@ function results(agent) {
     
 }
 
-function selectAgent() {
-    if (playerChoices.includes('classic' && 'classic' && 'classic')) {
-        console.log('Brimstone');
-    } 
-    
-    
-    
-    else if (playerChoices.includes('fun' )[0] == "fun" && playerChoices[1] == "fun" && playerChoices[2] == "fun") {
-        console.log('Clove');
-        return agents[23];
-    } else {
-        console.log(agents[(randomAgent())]);
-        return agents[randomAgent()];
-    }
-}
+
 
 card.style.display = 'none';
 displayResults.style.display = 'none';
@@ -429,7 +381,7 @@ function main() {
 
     if (questionPosition == 4) {
         console.log(playerChoices);
-        results(selectAgent());
+        results(selectAgent(playerChoices, agents));
     }
 
     questionPosition++;
