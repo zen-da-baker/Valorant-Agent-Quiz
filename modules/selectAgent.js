@@ -1,8 +1,5 @@
 function selectAgent(arr, agents) {
 
-    function compareArr(i) {
-        arr.includes(i);
-    }
 
     if (arr.includes('classic') && arr.includes('classic') && arr.includes('classic')) {
         console.log('Brimstone');

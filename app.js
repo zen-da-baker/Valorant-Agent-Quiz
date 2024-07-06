@@ -358,7 +358,7 @@ function results(agent) {
     agentDislike2.innerHTML = agent.dislikes[1];
     agentDislike3.innerHTML = agent.dislikes[2];
 
-    agentPair1.innerHTML = agent.likes[0];
+    agentPair1.innerHTML = agent.pair;
     
 }
 
