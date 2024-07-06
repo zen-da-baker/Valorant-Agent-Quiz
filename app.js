@@ -41,9 +41,17 @@ const agentDislike1 = document.getElementById('agent-dislike1');
 const agentDislike2 = document.getElementById('agent-dislike2');
 const agentDislike3 = document.getElementById('agent-dislike3');
 
+const pairHeading = document.getElementById('pair-heading');
+
 const agentPair1 = document.getElementById('agent-pair1');
 const agentPair2 = document.getElementById('agent-pair2');
 const agentPair3 = document.getElementById('agent-pair3');
+
+const opHeading = document.getElementById('op-heading');
+
+const agentOp1 = document.getElementById('agent-op1');
+const agentOp2 = document.getElementById('agent-op2');
+const agentOp3 = document.getElementById('agent-op3');
 
 
 // agent display variable
@@ -361,9 +369,20 @@ function results(agent) {
     agentDislike2.innerHTML = agent.dislikes[1];
     agentDislike3.innerHTML = agent.dislikes[2];
 
-    if (agent.pair == 'classic' && notEqual(agent, classic)) {
+    if (agent.pair == 'classic') {
+        // notEqual(agent, classic)
+
+        pairHeading.innerHTML = 'The old souls are';
+
+        agentPair1.innerHTML = classic[0].name;
         agentPair2.innerHTML = classic[1].name;
         agentPair3.innerHTML = classic[2].name;
+
+        opHeading.innerHTML = 'You might not get along with the youngsters';
+        
+        agentOp1.innerHTML = techie[0].name;
+        agentOp2.innerHTML = techie[1].name;
+        agentOp3.innerHTML = techie[2].name;
     }
     
 }
