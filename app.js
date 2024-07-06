@@ -33,6 +33,8 @@ const displayResults = document.getElementById('display-results');
 const agentName = document.getElementById('agent-name');
 const agentDescription = document.getElementById('agent-description');
 
+const agentPfp = document.getElementById('agent-pfp');
+
 const agentLike1 = document.getElementById('agent-like1');
 const agentLike2 = document.getElementById('agent-like2');
 const agentLike3 = document.getElementById('agent-like3');
@@ -369,6 +371,78 @@ function results(agent) {
     agentDislike2.innerHTML = agent.dislikes[1];
     agentDislike3.innerHTML = agent.dislikes[2];
 
+    agentPfp.src = agent.pfp;
+
+    if (agent.pair == 'fun') {
+        pairHeading.innerHTML = 'The fun youngersters are';
+
+        agentPair1.innerHTML = fun[0].name;
+        agentPair2.innerHTML = fun[1].name;
+        agentPair3.innerHTML = fun[2].name;
+
+        opHeading.innerHTML = 'The agents that snuff the fun';
+
+        agentOp1.innerHTML = strict[0].name;
+        agentOp2.innerHTML = strict[1].name;
+        agentOp3.innerHTML = strict[2].name;
+    }
+
+    if (agent.pair == 'charming') {
+        pairHeading.innerHTML = 'The stylish ones are';
+
+        agentPair1.innerHTML = charming[0].name;
+        agentPair2.innerHTML = charming[1].name;
+        agentPair3.innerHTML = charming[2].name;
+
+        opHeading.innerHTML = 'The stuffy agents are';
+
+        agentOp1.innerHTML = serious[0].name;
+        agentOp2.innerHTML = serious[1].name;
+        agentOp3.innerHTML = serious[2].name;
+    }
+
+    if (agent.pair == 'serious') {
+        pairHeading.innerHTML = 'The mature agents are';
+
+        agentPair1.innerHTML = serious[0].name;
+        agentPair2.innerHTML = serious[1].name;
+        agentPair3.innerHTML = serious[2].name;
+
+        opHeading.innerHTML = 'The agents that put looks over their jobs';
+
+        agentOp1.innerHTML = charming[0].name;
+        agentOp2.innerHTML = charming[1].name;
+        agentOp3.innerHTML = charming[2].name;
+    }
+
+    if (agent.pair == 'strict') {
+        pairHeading.innerHTML = 'The rule followers are';
+
+        agentPair1.innerHTML = strict[0].name;
+        agentPair2.innerHTML = strict[1].name;
+        agentPair3.innerHTML = strict[2].name;
+
+        opHeading.innerHTML = 'The agents that break the rules';
+
+        agentOp1.innerHTML = fun[0].name;
+        agentOp2.innerHTML = fun[1].name;
+        agentOp3.innerHTML = fun[2].name;
+    }
+
+    if (agent.pair == 'techie') {
+        pairHeading.innerHTML = 'The innovators are';
+
+        agentPair1.innerHTML = techie[0].name;
+        agentPair2.innerHTML = techie[1].name;
+        agentPair3.innerHTML = techie[2].name;
+
+        opHeading.innerHTML = 'The old dinos are';
+
+        agentOp1.innerHTML = classic[0].name;
+        agentOp2.innerHTML = classic[1].name;
+        agentOp3.innerHTML = classic[2].name;
+    }
+
     if (agent.pair == 'classic') {
         // notEqual(agent, classic)
 
@@ -378,11 +452,39 @@ function results(agent) {
         agentPair2.innerHTML = classic[1].name;
         agentPair3.innerHTML = classic[2].name;
 
-        opHeading.innerHTML = 'You might not get along with the youngsters';
-        
+        opHeading.innerHTML = 'The agents who think they know everything';
+
         agentOp1.innerHTML = techie[0].name;
         agentOp2.innerHTML = techie[1].name;
         agentOp3.innerHTML = techie[2].name;
+    }
+
+    if (agent.pair == 'independent') {
+        pairHeading.innerHTML = 'The free thinkers are';
+
+        agentPair1.innerHTML = independent[0].name;
+        agentPair2.innerHTML = independent[1].name;
+        agentPair3.innerHTML = independent[2].name;
+
+        opHeading.innerHTML = 'The hive mind agents are';
+
+        agentOp1.innerHTML = team[0].name;
+        agentOp2.innerHTML = team[1].name;
+        agentOp3.innerHTML = team[2].name;
+    }
+
+    if (agent.pair == 'team') {
+        pairHeading.innerHTML = 'The team players are';
+
+        agentPair1.innerHTML = team[0].name;
+        agentPair2.innerHTML = team[1].name;
+        agentPair3.innerHTML = team[2].name;
+
+        opHeading.innerHTML = 'The self absorbed agents are';
+
+        agentOp1.innerHTML = independent[0].name;
+        agentOp2.innerHTML = independent[1].name;
+        agentOp3.innerHTML = independent[2].name;
     }
     
 }

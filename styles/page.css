@@ -23,6 +23,11 @@ html {
 
 .container li {
     margin: 1rem;
+    list-style: none;
+}
+
+.description {
+    margin: 1rem;
 }
 
 /* 3. Structure
@@ -42,14 +47,23 @@ html {
     padding: 1rem;
 }
 
-.card {
-    margin: 5rem;
-    padding: 1rem;
+.page-card {
+    margin: 1rem;
+    padding: 0;
     border: 0.25rem solid black;
+}
+
+.card {
+    border: 0.1rem solid black;
+    margin: 1rem;
+    padding: 0rem;
+
+    width: 45%;
 }
 
 .container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* 4. Components

@@ -4,16 +4,16 @@ import { Agent } from './agentClass.js';
 // Agent objects constructed
 const brimstone = new Agent(
     'Brimstone', 
-    'Brimstone is a trustworthy agent who. A big fan of oldies. Allows follows the rules.', 
-    ['Cheese pizza', 'Classic cars', 'Plain coffee'], 
+    'A trustworthy agent who uses his years of experience to guide his decisions.', 
+    ['Saturday BBQs', 'Classic cars', 'Plain coffee'], 
     ['His bad back', 'Ipad kids', 'Whinners'],
     'classic'
 );
 
 const phoenix = new Agent(
     'Phoenix', 
-    'Agent description', 
-    ['serious'], 
+    'A fun loving jokester with a flaming pashion for protecting his team.', 
+    ['serious', '', ''], 
     ['fun', 'charming', 'independent'],
     'fun'
 );
