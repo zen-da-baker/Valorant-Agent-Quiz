@@ -7,7 +7,7 @@ const brimstone = new Agent(
     'Brimstone is a trustworthy agent who. A big fan of oldies. Allows follows the rules.', 
     ['Cheese pizza', 'Classic cars', 'Plain coffee'], 
     ['His bad back', 'Ipad kids', 'Whinners'],
-    'Other old souls'
+    'classic'
 );
 
 const phoenix = new Agent(
@@ -15,138 +15,161 @@ const phoenix = new Agent(
     'Agent description', 
     ['serious'], 
     ['fun', 'charming', 'independent'],
+    'fun'
 );
 
 const sage = new Agent('Sage', 
     'Agent description', 
     ['charming'], 
     ['fun', 'charming', 'independent'],
+    'team'
 );
 
 const sova = new Agent('Sova', 
     'Agent description', 
     ['charming'], 
     ['fun', 'charming', 'independent'],
+    'serious'
 );
 
 const viper = new Agent('Viper', 
     'Agent description', 
     ['classic'], 
     ['fun', 'charming', 'independent'],
+    'serious'
 );
 
 const cypher = new Agent('Cypher', 
     'Agent description', 
     ['classic'], 
     ['fun', 'charming', 'independent'],
+    'team'
 );
 
 const reyna = new Agent('Reyna', 
     'Agent description', 
     ['techie'], 
     ['fun', 'charming', 'independent'],
+    'serious'
 );
 
 const killjoy = new Agent('Killjoy', 
     'Agent description', 
     ['techie'], 
     ['fun', 'charming', 'independent'],
+    'techie'
 );
 
 const breach = new Agent('Breach', 
     'Agent description', 
     ['fun'], 
     ['fun', 'charming', 'independent'],
+    'techie'
 );
 
 const omen = new Agent('Omen', 
     'Agent description', 
     ['fun'], 
     ['fun', 'charming', 'independent'],
+    'independent'
 );
 
 const jett = new Agent('Jett', 
     'Agent description', 
     ['independent'], 
     ['fun', 'charming', 'independent'],
+    'charming'
 );
 
 const raze = new Agent('Raze', 
     'Agent description', 
     ['independent'], 
     ['fun', 'charming', 'independent'],
+    'techie'
 );
 
 const skye = new Agent('Skye', 
     'Agent description', 
     ['team'], 
     ['fun', 'charming', 'independent'],
+    'classic'
 );
 
 const yoru = new Agent('Yoru', 
     'Agent description', 
     ['team'], 
     ['fun', 'charming', 'independent'],
+    'independent'
 );
 
 const astra = new Agent('Astra', 
     'Agent description', 
     ['strict'], 
     ['fun', 'charming', 'independent'],
+    'classic'
 );
 
 const kayo = new Agent('Kay/o', 
     'Agent description', 
     ['strict'], 
     ['fun', 'charming', 'independent'],
+    'strict'
 );
 
 const chamber = new Agent('Chamber', 
     'Agent description', 
     ['serious'], 
     ['fun', 'charming', 'independent'],
+    'strict'
 );
 
 const neon = new Agent('Neon', 
     'Agent description', 
     ['charming'], 
     ['fun', 'charming', 'independent'],
+    'fun'
 );
 
 const fade = new Agent('Fade', 
     'Agent description', 
     ['classic'], 
     ['fun', 'charming', 'independent'],
+    'independent'
 );
 
 const harbor = new Agent('Harbor', 
     'Agent description', 
     ['fun'], 
     ['fun', 'charming', 'independent'],
+    'charming'
 );
 
 const gekko = new Agent('Gekko', 
     'Agent description', 
     ['strict'], 
     ['fun', 'charming', 'independent'],
+    'charming'
 );
 
 const deadlock = new Agent('Deadlock', 
     'Agent description', 
     ['techie'], 
     ['fun', 'charming', 'independent'],
+    'team'
 );
 
 const iso = new Agent('Iso', 
     'Agent description', 
     ['independent'], 
     ['fun', 'charming', 'independent'],
+    'strict'
 );
 
 const clove = new Agent('Clove', 
     'Agent description', 
     ['team'], 
     ['fun', 'charming', 'independent'],
+    'fun'
 );
 
 const agents = [

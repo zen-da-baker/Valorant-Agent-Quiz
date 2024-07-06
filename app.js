@@ -4,6 +4,7 @@ import { agents } from './modules/agentList.js';
 import { Question, questions } from './modules/quiz.js';
 import { randomAgent } from './modules/randomAgent.js';
 import { selectAgent } from './modules/selectAgent.js';
+import { notEqual } from './modules/notEqual.js';
 import { playerChoices, pushFun, pushCharming, pushSerious, pushStrict, pushTechie, pushClassic, pushIndependent, pushTeam } from './modules/playerChoices.js';
 // import { questionSequence } from './modules/questionSequence.js';
 // import { pairs } from './modules/pairs.js';
@@ -116,22 +117,22 @@ let independent = [];
 let team = [];
 
 for (let i = 0; i < agents.length; i++) {
-    if (agents[i].likes[0] == 'serious') {
-        serious.push(agents[i].name);
-    } else if (agents[i].likes[0] == 'fun') {
-        fun.push(agents[i].name);
-    } else if (agents[i].likes[0] == 'charming') {
-        charming.push(agents[i].name);
-    } else if (agents[i].likes[0] == 'strict') {
-        strict.push(agents[i].name);
-    } else if (agents[i].likes[0] == 'techie') {
-        techie.push(agents[i].name);
-    } else if (agents[i].likes[0] == 'classic') {
-        classic.push(agents[i].name);
-    } else if (agents[i].likes[0] == 'independent') {
-        independent.push(agents[i].name);
-    } else if (agents[i].likes[0] == 'team') {
-        team.push(agents[i].name);
+    if (agents[i].pair == 'serious') {
+        serious.push(agents[i]);
+    } else if (agents[i].pair == 'fun') {
+        fun.push(agents[i]);
+    } else if (agents[i].pair == 'charming') {
+        charming.push(agents[i]);
+    } else if (agents[i].pair == 'strict') {
+        strict.push(agents[i]);
+    } else if (agents[i].pair == 'techie') {
+        techie.push(agents[i]);
+    } else if (agents[i].pair == 'classic') {
+        classic.push(agents[i]);
+    } else if (agents[i].pair == 'independent') {
+        independent.push(agents[i]);
+    } else if (agents[i].pair == 'team') {
+        team.push(agents[i]);
     }
 }
 
@@ -341,6 +342,8 @@ function questionSequence() {
     }
 }
 
+
+
 function results(agent) {
     console.log(agent.name);
 
@@ -358,7 +361,10 @@ function results(agent) {
     agentDislike2.innerHTML = agent.dislikes[1];
     agentDislike3.innerHTML = agent.dislikes[2];
 
-    agentPair1.innerHTML = agent.pair;
+    if (agent.pair == 'classic' && notEqual(agent, classic)) {
+        agentPair2.innerHTML = classic[1].name;
+        agentPair3.innerHTML = classic[2].name;
+    }
     
 }
 
