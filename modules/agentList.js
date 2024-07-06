@@ -12,57 +12,57 @@ const brimstone = new Agent(
 
 const phoenix = new Agent(
     'Phoenix', 
-    'A fun loving jokester with a flaming pashion for protecting his team.', 
-    ['serious', '', ''], 
-    ['fun', 'charming', 'independent'],
+    'A fun loving jokester with a flaming passion for protecting his team.', 
+    ['Fresh sneakers', 'Glorious memes', 'Sports'], 
+    ['Offices', 'Snow', 'Bugs'],
     'fun'
 );
 
 const sage = new Agent('Sage', 
-    'Agent description', 
-    ['charming'], 
-    ['fun', 'charming', 'independent'],
+    'Team mother and expert healer that will do anything for her team.', 
+    ['Calligraphy', 'Beach trips', 'Chonky jewelry'], 
+    ['Selfishness', 'Lotteries', 'Big cities'],
     'team'
 );
 
 const sova = new Agent('Sova', 
-    'Agent description', 
-    ['charming'], 
-    ['fun', 'charming', 'independent'],
+    'A self-reliant archer from the frigid tundra.', 
+    ['Snow', 'Hats', 'Chocolate Babka'], 
+    ['Bears', 'Barbers', 'Gambling'],
     'serious'
 );
 
 const viper = new Agent('Viper', 
-    'Agent description', 
-    ['classic'], 
-    ['fun', 'charming', 'independent'],
+    'A self described monster that hides her soft side behind a cloud of poison.', 
+    ['Traps', 'Bagels', 'Plushies'], 
+    ['Smell of hear', 'Rodents', 'Ice cream'],
     'serious'
 );
 
 const cypher = new Agent('Cypher', 
-    'Agent description', 
-    ['classic'], 
-    ['fun', 'charming', 'independent'],
+    'The ultimate computer geek. Period.', 
+    ['Chess', 'Passwords', 'CRT TVs'], 
+    ['Sharing', 'Secrets', 'Sailing'],
     'team'
 );
 
 const reyna = new Agent('Reyna', 
-    'Agent description', 
-    ['techie'], 
-    ['fun', 'charming', 'independent'],
+    'A nightmare for her enemies with a blinding eye for revenge.', 
+    ['Tattoos', 'Revenge', 'Hair dye'], 
+    ['Technology', 'Optimism', 'Dirty tricks'],
     'serious'
 );
 
 const killjoy = new Agent('Killjoy', 
-    'Agent description', 
-    ['techie'], 
-    ['fun', 'charming', 'independent'],
+    'A young scientist who uses programming to solve any problem.', 
+    ['Robots', 'Lentil soup', 'Legos'], 
+    ['Pools', 'Parties', 'Google Maps haters'],
     'techie'
 );
 
 const breach = new Agent('Breach', 
     'Agent description', 
-    ['fun'], 
+    ['Robots'], 
     ['fun', 'charming', 'independent'],
     'techie'
 );
@@ -125,7 +125,7 @@ const chamber = new Agent('Chamber',
 
 const neon = new Agent('Neon', 
     'Agent description', 
-    ['charming'], 
+    ['Adobo'], 
     ['fun', 'charming', 'independent'],
     'fun'
 );
