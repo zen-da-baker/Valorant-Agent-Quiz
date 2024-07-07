@@ -2,16 +2,14 @@
 import { Agent } from './agentClass.js';
 
 // Agent objects constructed
-const brimstone = new Agent(
-    'Brimstone', 
+const brimstone = new Agent('Brimstone', 
     'A trustworthy agent who uses his years of experience to guide his decisions.', 
     ['Saturday BBQs', 'Classic cars', 'Plain coffee'], 
     ['His bad back', 'Ipad kids', 'Whinners'],
     'classic'
 );
 
-const phoenix = new Agent(
-    'Phoenix', 
+const phoenix = new Agent('Phoenix', 
     'A fun loving jokester with a flaming passion for protecting his team.', 
     ['Fresh sneakers', 'Glorious memes', 'Sports'], 
     ['Offices', 'Snow', 'Bugs'],
@@ -61,114 +59,114 @@ const killjoy = new Agent('Killjoy',
 );
 
 const breach = new Agent('Breach', 
-    'Agent description', 
-    ['Robots'], 
-    ['fun', 'charming', 'independent'],
+    'A former convict who specializes in making earthquakes.', 
+    ['Bionics', 'Parties', 'Beer'], 
+    ['Fancy foods', 'Libraries', 'Police'],
     'techie'
 );
 
 const omen = new Agent('Omen', 
-    'Agent description', 
-    ['fun'], 
-    ['fun', 'charming', 'independent'],
+    'A living ghost in search of his fragmented memories.', 
+    ['Family', 'Cities', 'Nicknames'], 
+    ['Time', 'Liars', 'Hotdogs'],
     'independent'
 );
 
 const jett = new Agent('Jett', 
-    'Agent description', 
-    ['independent'], 
-    ['fun', 'charming', 'independent'],
+    'A jokester with a chaotic energy and strong sense of fashion.', 
+    ['Hurricane chaos', 'Sarcastic jokes', 'Shopping'], 
+    ['Hoodies', 'Calamari', 'Countryside car rides'],
     'charming'
 );
 
 const raze = new Agent('Raze', 
-    'Agent description', 
-    ['independent'], 
-    ['fun', 'charming', 'independent'],
+    'Boom bot robot engineer that brings the party.', 
+    ['Robots', 'Disco lights', 'Graphitti'], 
+    ['Books', 'Plans', 'Clean streets'],
     'techie'
 );
 
 const skye = new Agent('Skye', 
-    'Agent description', 
-    ['team'], 
-    ['fun', 'charming', 'independent'],
+    'A farmer and adventurer who lives off the grid.', 
+    ['Animals', 'Spirits', 'Old tales'], 
+    ['Spiders', 'Loud music', 'Flashing lights'],
     'classic'
 );
 
 const yoru = new Agent('Yoru', 
-    'Agent description', 
-    ['team'], 
-    ['fun', 'charming', 'independent'],
+    'A fashionable gambler who gets rich off arrogant opponents.', 
+    ['Gambling', 'Traveling', 'Leather jackets'], 
+    ['Directions', 'Cheaters', 'Heros'],
     'independent'
 );
 
 const astra = new Agent('Astra', 
-    'Agent description', 
-    ['strict'], 
-    ['fun', 'charming', 'independent'],
+    'A traveler that shines bright like the stars.', 
+    ['Glitter', 'Loud music', 'Astronomy'], 
+    ['Cities', 'Offices', 'Bats'],
     'classic'
 );
 
 const kayo = new Agent('Kay/o', 
-    'Agent description', 
-    ['strict'], 
-    ['fun', 'charming', 'independent'],
+    'A war veteran robot from the future.', 
+    ['Rules', 'Digital food', 'RC cars'], 
+    ['Toasters', 'Meat bags', 'Sleep mode'],
     'strict'
 );
 
 const chamber = new Agent('Chamber', 
-    'Agent description', 
-    ['serious'], 
-    ['fun', 'charming', 'independent'],
+    'The Tony Stark of the Valorant world who buys his way to victory.', 
+    ['Freshly ironed pants', 'Secrets', 'Paninis'], 
+    ['Debt', 'Surprise parties', 'Trains'],
     'strict'
 );
 
 const neon = new Agent('Neon', 
-    'Agent description', 
-    ['Adobo'], 
-    ['fun', 'charming', 'independent'],
+    'A fun loving track star who saves the day with her electric rythm.', 
+    ['Adobo', 'Singing', 'Light shows'], 
+    ['Errie quiet rooms', 'Dead batteries', 'Farm lands'],
     'fun'
 );
 
 const fade = new Agent('Fade', 
-    'Agent description', 
-    ['classic'], 
-    ['fun', 'charming', 'independent'],
+    'A manipulator of nighmares in search of someone.', 
+    ['Nightmares', 'Hair dye', 'Dark alleys'], 
+    ['Dreams', 'Plums', 'Bossy bosses'],
     'independent'
 );
 
 const harbor = new Agent('Harbor', 
-    'Agent description', 
-    ['fun'], 
-    ['fun', 'charming', 'independent'],
+    'An action movie star but for real.', 
+    ['Sleeveless shirts', 'Tattoos', 'Fans'], 
+    ['Noodle arms', 'Uncoordinated colors', 'Spiders'],
     'charming'
 );
 
 const gekko = new Agent('Gekko', 
-    'Agent description', 
-    ['strict'], 
-    ['fun', 'charming', 'independent'],
+    'A laid back city dweller with many pets he nurtures in the concrete jungle.', 
+    ['Graphitti', 'Dank memes', 'Parties'], 
+    ['Quiet spaces', 'Sweat pants', 'Yelling'],
     'charming'
 );
 
 const deadlock = new Agent('Deadlock', 
-    'Agent description', 
-    ['techie'], 
-    ['fun', 'charming', 'independent'],
+    'An assassin who places loyalty above all else.', 
+    ['Cake', 'Potlucks', 'Sports'], 
+    ['Bears', 'Tricks', 'Disloyalty'],
     'team'
 );
 
 const iso = new Agent('Iso', 
-    'Agent description', 
-    ['independent'], 
-    ['fun', 'charming', 'independent'],
+    'A city dwelling agent with a theme song for every situation.', 
+    ['Hoodies', 'Sneakers', 'Airpods'], 
+    ['Graphitti', 'Libraries', 'The countryside'],
     'strict'
 );
 
 const clove = new Agent('Clove', 
-    'Agent description', 
-    ['team'], 
-    ['fun', 'charming', 'independent'],
+    'A trouble maker with an eye for art.', 
+    ['Dank memes', 'Butterflies', 'Toilet papering houses'], 
+    ['Offices', 'Medicine', 'Categories'],
     'fun'
 );
 
