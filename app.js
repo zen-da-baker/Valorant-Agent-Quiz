@@ -14,6 +14,7 @@ import { playerChoices, pushFun, pushCharming, pushSerious, pushStrict, pushTech
 const questionDisplay = document.getElementById('question-display');
 
 const beginBtn = document.getElementById('begin');
+const reset = document.getElementById('reset');
 
 const questionText = document.getElementById('question-text');
 
@@ -515,3 +516,16 @@ function main() {
 }
 
 beginBtn.addEventListener("click", main);
+reset.addEventListener("click", () => {
+
+    card.style.display = 'none';
+    displayResults.style.display = 'none';
+
+    questionPosition = 1;
+
+    playerChoices.pop();
+    playerChoices.pop();
+    playerChoices.pop();
+
+    main();
+});

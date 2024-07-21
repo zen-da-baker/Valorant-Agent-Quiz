@@ -18,6 +18,10 @@ html {
     padding: 0;
 }
 
+body {
+    background-color: hsl(170, 25%, 50%);
+}
+
 /* 2. Typography
 ========================================================= */
 
@@ -35,10 +39,10 @@ html {
 }
 
 .link {
-    color: hsl(180, 50%, 90%);
+    color: hsl(180, 50%, 10%);
 }
 .link:hover {
-    background-color: hsl(180, 50%, 30%);
+    background-color: hsl(180, 50%, 70%);
 }
 
 #agent-name {
@@ -49,23 +53,33 @@ html {
 ========================================================= */
 
 .header {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: hsl(0, 0%, 90%);
 
     padding: 1rem;
+
+    min-height: 5vh;
 }
 
 .footer {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: hsl(0, 0%, 90%);
 
     padding: 1rem;
+
+    min-height: 5vh;
+}
+
+.main {
+    min-height: 80vh;
 }
 
 .page-card {
     margin: 1rem;
     padding: 0;
     border: 0.25rem solid black;
+
+    background-color: hsl(0, 0%, 80%);
 }
 
 .card {
@@ -81,9 +95,33 @@ html {
     flex-wrap: wrap;
 }
 
+.card .container {
+    background-color: hsl(170, 35%, 80%);
+}
+
 .pfp {
     width: 25rem;
     border-radius: 1rem;
+    border: 0.125rem solid black;
+}
+
+.quiz {
+    margin: 2rem auto;
+
+    width: 50vw;
+
+    border: 0.5rem solid black;
+
+    background-color: hsl(210, 0%, 90%);
+}
+
+.quiz .btn {
+    margin: 1rem;
+}
+
+.quiz .header {
+    color: white;
+    background-color: hsl(240, 50%, 25%);
 }
 
 #agent-details {
@@ -91,8 +129,6 @@ html {
 
     width: 50%;
 }
-
-
 
 #agent-name {
     background-color: white;
@@ -126,8 +162,29 @@ html {
     background-color: white;
 }
 .btn:hover {
-    background-color: black;
+    background-color: hsl(240, 50%, 25%);
     color: white;
+}
+
+#reset {
+
+    padding: 1rem;
+
+    width: 90%;
+
+    position: relative;
+
+    margin: 2rem 5vw;
+
+}
+
+#begin {
+    padding: 5rem;
+
+    font-size: 3rem;
+    margin: 25vh 40vw;
+
+    box-shadow: 1rem 1rem black;
 }
 
 /* 5. Responsive Design

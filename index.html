@@ -14,9 +14,10 @@
     <body>
         <header class="header">
             <h1>Valorant Agent Personality Quiz</h1>
+            <p>In Windows 98 mode</p>
         </header>
 
-        <main>
+        <main class="main">
             <button id="begin" class="btn">Begin</button>
 
             <!-- Test button -->
@@ -31,7 +32,7 @@
             <!-- Agent information display test -->
             <!-- <div id="agent-display"></div> -->
 
-            <div id="card" class="card">
+            <div id="card" class="card quiz">
                 <header class="header">
                     <h2 id="question-text"></h2>
                 </header>
@@ -49,7 +50,9 @@
             <div id="question-display"></div>
 
             <div id="display-results">
+                
                 <div class="page-card">
+                    
                     <header class="header container">
                         <img class="pfp" id="agent-pfp" alt="Agent profile picture"/>
 
@@ -114,6 +117,8 @@
                         </div>
                     </div>
                 </div>
+
+                <button id="reset" class="btn">Play Again</button>
             </div>
         </main>
 
