@@ -1,5 +1,9 @@
 /*
-    This CSS file is for the page itself
+    1. Global
+    2. Typography
+    3. Structure
+    4. Components
+    5. Responsive Design
 */
 
 /* 1. Global
@@ -79,10 +83,31 @@ html {
 
 .pfp {
     width: 25rem;
+    border-radius: 1rem;
 }
 
 #agent-details {
     margin: 2rem;
+
+    width: 50%;
+}
+
+
+
+#agent-name {
+    background-color: white;
+    color: black;
+
+    padding: 2rem;
+
+}
+
+#agent-description {
+    background-color: white;
+    color: black;
+
+    padding: 5rem;
+
 }
 
 /* 4. Components
@@ -103,4 +128,19 @@ html {
 .btn:hover {
     background-color: black;
     color: white;
+}
+
+/* 5. Responsive Design
+========================================================= */
+
+@media only screen and (max-width: 999px) {
+    #agent-details {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .card {
+        width: 100%;
+    }
 }
