@@ -18,7 +18,7 @@ html {
 ========================================================= */
 
 html {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container li {
@@ -27,6 +27,17 @@ html {
 }
 
 .description {
+    margin: 1rem;
+}
+
+.link {
+    color: hsl(180, 50%, 90%);
+}
+.link:hover {
+    background-color: hsl(180, 50%, 30%);
+}
+
+#agent-name {
     margin: 1rem;
 }
 
@@ -64,6 +75,14 @@ html {
 .container {
     display: flex;
     flex-wrap: wrap;
+}
+
+.pfp {
+    width: 25rem;
+}
+
+#agent-details {
+    margin: 2rem;
 }
 
 /* 4. Components

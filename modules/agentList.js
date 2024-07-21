@@ -107,7 +107,7 @@ const astra = new Agent('Astra',
     'classic'
 );
 
-const kayo = new Agent('Kay/o', 
+const kayo = new Agent('Kayo', 
     'A war veteran robot from the future.', 
     ['Rules', 'Digital food', 'RC cars'], 
     ['Toasters', 'Meat bags', 'Sleep mode'],
